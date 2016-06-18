@@ -1,0 +1,2 @@
+./genRequireList test.cpp > test_require.cpp
+g++ test_require.cpp  -o test $(Magick++-config --cxxflags --cppflags --ldflags --libs) -lm

@@ -1,0 +1,2 @@
+./genRequireList render3d.cpp > render3d_require.cpp
+g++ render3d_require.cpp  -o render3d $(Magick++-config --cxxflags --cppflags --ldflags --libs) -lm
